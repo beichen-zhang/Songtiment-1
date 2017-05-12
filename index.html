@@ -1,0 +1,42 @@
+<!Doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Songtiment </title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <style>
+           body {
+            background-image: url("home.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 800px 500px;
+            background-position: center; 
+            }
+            p {
+                margin-top: 10cm;
+            }
+            .wrapper {
+                text-align: center;
+            }
+        </style>
+    </head>
+    
+    <body>
+    <form action="search.php" method="post">
+    <div class = "wrapper">
+	<div class="container">
+        <p></p>
+		<div class="col-md-4 col-md-offset-4">
+		<div class="form-group">
+    		<label for="uid"><input type="text" class="form-control input-lg" name="singer_name" placeholder="singer name"></label>
+		
+            <label for="pwd"><input type="text" class="form-control input-lg" name="song_name" placeholder="song name"></label>
+		</div>  	
+	    </div>
+	</div>
+    <button type="search" class="btn btn-primary btn-lg" name="search">Search</button>
+    </div>
+
+    </form>
+    </body>
+</html>
